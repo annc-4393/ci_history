@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> 국내 기업들의 ci 역사 </title>
+	<meta name="description" content="우리나라 기업의 ci 역사를 소개합니다.">
+	<meta name="keywords" content="국내기업, ci, 로고, 역사">
+	<link rel="stylesheet" href="style.css">
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+	    background-image:url("hompi.jpg");
+	    background-size:cover;
+	    background-position:center;
+	    background-repeat:no-repeat;
+
+	    height:100vh;
+	    display:flex;
+	    justify-content:center;
+	    align-items:center;
+
+	    font-family:'Pretendard', sans-serif;
+
+	    position:relative;
+}
+
+    body::before{
+	    content:"";
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	    background:rgba(0,0,0,0.5);
+	    z-index:0;
+}
+
+	.container{
+	    position:relative;
+	    z-index:1;
+
+	    display:flex;
+	    flex-direction:column;
+	    gap:30px;
+	    text-align:center;
+
+	    transform:translateY(100px);
+}
+
+    .row{
+	    display:flex;
+	    justify-content:center;
+	    gap:5vw;
+	    flex-wrap:wrap;
+}
+
+    .company{
+        color:white;
+	    text-decoration:none;
+	    font-size:40px;
+	    font-weight:600;
+	    font-family:'Pretendard', sans-serif;
+	    transition:all 0.3s ease;
+    }
+
+    .company:hover{
+        color:skyblue;
+        transform:scale(1.3);
+    }
+
+    .title{
+	    position:absolute;
+
+	    top:60px;          
+	    left:50%;
+	    transform:translateX(-50%);
+
+	    color:#d9eaf7;
+		font-weight:400;
+		font-size: 20pt;
+		letter-spacing:4px;
+
+	    z-index:1;
+}
+
+.menu-btn{
+    position:absolute;
+    top:30px;
+    left:30px;
+    z-index:100;
+}
+
+.menu-btn span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:white;
+    margin:6px 0;
+}
+
+.sidebar{
+    position:absolute;
+    top:0;
+    left:-220px;
+
+    width:220px;
+    height:100vh;
+
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding-left:30px;
+
+    transition:0.3s;
+    z-index:99;
+}
+
+.menu-btn:hover + .sidebar,
+.sidebar:hover{
+    left:0;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    margin:15px 0;
+}
+
+.sidebar a:hover{
+    text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+	<div class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="sidebar">
+    <a href="nongshim.html">농심</a>
+    <a href="koreanair.html">대한항공</a>
+    <a href="booyoung.html">부영</a>
+    <a href="posco.html">포스코</a>
+    <a href="ssangyong.html">쌍용</a>
+</div>
+
+<h1 class="title">국내 기업들의 CI 역사</h1>
+
+<div class="container">
+
+    <div class="row">
+        <a href="nonshim" class="company">농심</a>
+        <a href="koreanair" class="company">대한항공</a>
+        <a href="booyoung" class="company">부영</a>
+    </div>
+
+    <div class="row">
+        <a href="posco" class="company">포스코</a>
+        <a href="ssangyong" class="company">쌍용</a>
+    </div>
+
+</div>
+
+</body>
+</html>
